@@ -1,0 +1,32 @@
+C-QAS report views - interactive concept app
+============================================
+
+HOW TO RUN
+  Double-click  C-QAS-report-views.html  - it opens in your web browser.
+  No install, no server, works offline (the Barlow font loads from Google Fonts
+  when online; otherwise it falls back to Arial).
+
+VIEWS (tabs at the top, or link straight to one)
+  Original report  ...html#original   - the supplied report, reproduced as-is (C-QAS / Before)
+  Simple view      ...html#simple     - Basic EO user: "What can I use this scene for?"
+  Advanced view    ...html#advanced   - Technical EO user: checks, accuracy and evidence
+  Product Explorer ...html#explorer   - Mock-up of the Landsat C2 SR page on the CEOS-ARD
+                                        Product Explorer with a new "C-QAS quality checks"
+                                        section near the bottom (Simple by default, Advanced
+                                        switch). Uses the explorer's own colours, fonts and
+                                        dark theme. Buttons above the frame jump to the section.
+
+INTERACTIONS
+  - Hover (or Tab to) any chart point, bar or finding cell for details
+  - Geometric chart: switch pixel / metres; arrow keys step through comparisons
+  - Radiometric chart: switch uncertainty whiskers between k = 1 and k = 2
+  - PFS findings table: filter rows by Met / Not met / Not assessed / Not required
+  - "Show data table" under each chart lists the plotted values
+
+CHANGING THE DATA
+  (The Product Explorer mock-up is embedded separately and carries its own copy
+  of the same example values.)
+
+  Open the HTML in a text editor and find the "DATA" block near the bottom
+  (ORIGINAL, PFS, GEO, RAD). Values there drive every view. All proposed-view
+  values are example data, matching C-QAS-before-after-user-views.pdf.
